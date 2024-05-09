@@ -1,0 +1,31 @@
+{
+  "name": "airdrop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "keygen": "tsc && node ./dist/keygen.js",
+    "airdrop": "tsc && node ./dist/airdrop.js",
+    "transfer": "tsc && node ./dist/transfer.js",
+    "enroll": "tsc && node ./dist/enroll.js",
+    "walletToBase58": "tsc && npx run-func ./dist/__tests__/byteArrayAndBase58.test.js wallet_to_base58",
+    "base58ToWalletAddress": "tsc && npx run-func ./dist/__tests__/byteArrayAndBase58.test.js base58_to_walletAddress"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.30.0",
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/web3.js": "^1.90.0",
+    "@types/node": "^20.11.17",
+    "bs58": "^5.0.0",
+    "prompt-sync": "^4.2.0",
+    "run-func": "^3.0.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/prompt-sync": "^4.2.3",
+    "ts-node": "^10.9.2"
+  }
+}
